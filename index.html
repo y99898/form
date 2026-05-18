@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes, shrink-to-fit=no">
+  <title>انضم لفريق درّاجو الحمدانية | قوة • حرية • طاقة</title>
+
+  <!-- خطوط -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&family=Changa:wght@500;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- خلفية -->
+  <div class="animated-bg">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+
+  <!-- إشعار -->
+  <div class="notification" id="notification"></div>
+
+  <!-- الحاوية -->
+  <div class="container">
+    <div class="header">
+      <div class="logo-icon">
+        <i class="fas fa-biking"></i> <span style="font-size: 2.5rem;">⚙️</span>
+      </div>
+      <h2 class="glow-text">انضم إلى درّاجو الحمدانية</h2>
+      <div class="subtitle">
+        <i class="fas fa-fire"></i> قوة · سرعة · طاقة <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+    <form id="joinForm">
+
+      <!-- الصورة -->
+      <div class="photo-upload-group">
+        <label style="text-align:center;width:100%;">
+          <i class="fas fa-camera-retro"></i> الصورة الشخصية
+        </label>
+
+        <div class="photo-preview-container" id="photoPreview">
+          <img id="previewImage" src="" alt="الصورة الشخصية">
+          <i class="fas fa-user-circle placeholder-icon"></i>
+        </div>
+
+        <div style="display:flex;gap:10px;align-items:center;">
+          <div class="upload-btn-wrapper">
+            <button type="button" class="upload-btn">
+              <i class="fas fa-cloud-upload-alt"></i> اختر صورة
+            </button>
+            <input type="file" id="photoInput" accept="image/*">
+          </div>
+
+          <button type="button" class="remove-photo-btn" id="removePhotoBtn">
+            <i class="fas fa-trash-alt"></i> حذف
+          </button>
+        </div>
+      </div>
+
+      <div class="input-group">
+        <label><i class="fas fa-user-circle"></i> الاسم الثلاثي</label>
+        <input type="text" id="fullname" required>
+      </div>
+
+      <div class="input-group">
+        <label><i class="fab fa-whatsapp"></i> رقم الواتساب</label>
+        <input type="tel" id="whatsapp" required>
+      </div>
+
+      <div class="input-group">
+        <label><i class="fas fa-venus-mars"></i> الجنس</label>
+        <select id="gender" required>
+          <option value="" disabled selected>-- اختر --</option>
+          <option value="ذكر">ذكر</option>
+          <option value="أنثى">أنثى</option>
+        </select>
+      </div>
+
+      <div class="input-group">
+        <label><i class="fas fa-map-marker-alt"></i> العنوان</label>
+        <textarea id="address" required></textarea>
+      </div>
+
+      <div class="input-group">
+        <label><i class="fas fa-calendar-alt"></i> العمر</label>
+        <input type="number" id="age" min="10" max="80" required>
+      </div>
+
+      <button type="submit" class="submit-btn" id="submitBtn">
+        <i class="fas fa-paper-plane"></i> انطلق الآن
+      </button>
+
+    </form>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+
+</body>
+</html>

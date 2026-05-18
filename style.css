@@ -1,0 +1,164 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Cairo',sans-serif;
+}
+
+body{
+  background:#0a0f1e;
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:20px;
+  overflow-x:hidden;
+}
+
+.container{
+  width:100%;
+  max-width:580px;
+  background:rgba(20,25,45,.6);
+  backdrop-filter:blur(20px);
+  border-radius:40px;
+  padding:35px 25px;
+  color:#fff;
+  z-index:2;
+}
+
+.header{
+  text-align:center;
+  margin-bottom:25px;
+}
+
+.logo-icon{
+  font-size:3rem;
+  color:#ff4d6d;
+}
+
+h2{
+  font-size:2rem;
+  margin:10px 0;
+}
+
+.subtitle{
+  color:#b3c6ff;
+}
+
+form{
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+}
+
+label{
+  font-weight:700;
+  margin-bottom:8px;
+  display:block;
+}
+
+input,select,textarea{
+  width:100%;
+  padding:15px;
+  border:none;
+  border-radius:15px;
+  outline:none;
+  background:#111827;
+  color:white;
+}
+
+.photo-upload-group{
+  text-align:center;
+}
+
+.photo-preview-container{
+  width:140px;
+  height:140px;
+  margin:auto;
+  border-radius:50%;
+  overflow:hidden;
+  background:#111827;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.photo-preview-container img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:none;
+}
+
+.placeholder-icon{
+  font-size:4rem;
+  color:#aaa;
+}
+
+.upload-btn,.remove-photo-btn,.submit-btn{
+  border:none;
+  cursor:pointer;
+  border-radius:25px;
+}
+
+.upload-btn{
+  padding:10px 20px;
+  background:#667eea;
+  color:white;
+}
+
+.remove-photo-btn{
+  padding:10px 15px;
+  background:#ff4d6d;
+  color:white;
+}
+
+.submit-btn{
+  padding:15px;
+  background:linear-gradient(135deg,#ff416c,#ff4b2b);
+  color:white;
+  font-size:1.2rem;
+}
+
+.notification{
+  position:fixed;
+  top:20px;
+  left:50%;
+  transform:translateX(-50%);
+  background:black;
+  color:white;
+  padding:15px 25px;
+  border-radius:30px;
+  display:none;
+}
+
+.animated-bg{
+  position:fixed;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  z-index:0;
+}
+
+.orb{
+  position:absolute;
+  border-radius:50%;
+  filter:blur(80px);
+}
+
+.orb-1{
+  width:300px;
+  height:300px;
+  background:#ff3cac;
+  top:-50px;
+  left:-50px;
+}
+
+.orb-2{
+  width:300px;
+  height:300px;
+  background:#2b86c5;
+  bottom:-50px;
+  right:-50px;
+}
